@@ -12,8 +12,8 @@
             <div id="tela"><p id="tela2"></p></div>
             <div id="teclado">
                 <div id="lin0" class="linha">
-                    <input type="button" value="CE" id="apagar" onclick="limpar()">
-                    <input type="button" value="C" id="apagarNum" onclick="apagar()">
+                    <input class="numCE" type="button" value="CE" id="apagar" onclick="limpar()" onmousedown="press('CE')" onmouseup="loose('CE')">
+                    <input class="numC"type="button" value="C" id="apagarNum" onclick="apagar()" onmousedown="press('C')" onmouseup="loose('C')">
                 </div>
                 <div id="lin1" class="linha">
                     <div class="num1" id="num" onclick="insert('1')" onmousedown="press('1')" onmouseup="loose('1')"><p><strong>1</strong></p></div>
