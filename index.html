@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="style.css">
+        <title>Calculadora</title>
+    </head>
+    <body>
+        <div id="bloco">
+            <div id="tela"><p id="tela2"></p></div>
+            <div id="teclado">
+                <div id="lin0" class="linha">
+                    <input type="button" value="CE" id="apagar" onclick="limpar()">
+                    <input type="button" value="C" id="apagarNum" onclick="apagar()">
+                </div>
+                <div id="lin1" class="linha">
+                    <div class="num1" id="num" onclick="insert('1')" onmousedown="press('1')" onmouseup="loose('1')"><p><strong>1</strong></p></div>
+                    <div class="num2" id="num" onclick="insert('2')" onmousedown="press('2')" onmouseup="loose('2')"><p><strong>2</strong></p></div>
+                    <div class="num3" id="num" onclick="insert('3')" onmousedown="press('3')" onmouseup="loose('3')"><p><strong>3</strong></p></div>
+                    <div class="numSo" id="num" onclick="insert(' + ')" onmousedown="press('So')" onmouseup="loose('So')"><p><strong>+</strong></p></div>
+                </div>
+                <div id="lin2" class="linha">
+                    <div class="num4" id="num" onclick="insert('4')" onmousedown="press('4')" onmouseup="loose('4')"><p><strong>4</strong></p></div>
+                    <div class="num5" id="num" onclick="insert('5')" onmousedown="press('5')" onmouseup="loose('5')"><p><strong>5</strong></p></div>
+                    <div class="num6" id="num" onclick="insert('6')" onmousedown="press('6')" onmouseup="loose('6')"><p><strong>6</strong></p></div>
+                    <div class="numSu" id="num" onclick="insert(' - ')" onmousedown="press('Su')" onmouseup="loose('Su')"><p><strong>-</strong></p></div>
+                </div>
+                <div id="lin3" class="linha">
+                    <div class="num7" id="num" onclick="insert('7')" onmousedown="press('7')" onmouseup="loose('7')"><p><strong>7</strong></p></div>
+                    <div class="num8" id="num" onclick="insert('8')" onmousedown="press('8')" onmouseup="loose('8')"><p><strong>8</strong></p></div>
+                    <div class="num9" id="num" onclick="insert('9')" onmousedown="press('9')" onmouseup="loose('9')"><p><strong>9</strong></p></div>
+                    <div class="numMu" id="num" onclick="insert(' * ')" onmousedown="press('Mu')" onmouseup="loose('Mu')"><p><strong>X</strong></p></div>
+                </div>
+                <div id="lin4" class="linha">
+                    <div class="num0" id="num" onclick="insert('0')" onmousedown="press('0')" onmouseup="loose('0')"><p><strong>0</strong></p></div>
+                    <input type="button" value="=" id="enviar" onclick="calculate()">
+                    <div class="numDi" id="num" onclick="insert(' / ')" onmousedown="press('Di')" onmouseup="loose('Di')"><p><strong>÷</strong></p></div>
+                </div>
+                <!-- <div id="col1" class="coluna">
+                    <input type="button" value="=" id="enviar" onclick="calculate()">
+                </div> -->
+            </div>
+        </div>
+
+        <script src="script.js"></script>
+    </body>
+</html>
