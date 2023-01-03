@@ -27,7 +27,11 @@ function limpar(){
    window.document.getElementById('tela2').innerHTML = ''
 }
 
-var enviar = document.getElementById('enviar')
+function apagar(){
+    var resultado = window.document.getElementById('tela2').innerHTML
+    document.getElementById('tela2').innerHTML = resultado.substring(0, resultado.length -1)
+
+}
 
 
 
